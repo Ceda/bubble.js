@@ -1,0 +1,25 @@
+{
+  "name": "bubble.js",
+  "homepage": "http://github.com/Ceda/bubble.js/",
+  "authors": [
+    "Krasimir Tsonev"
+  ],
+  "description": "Pleasing the DOM event handling in just 1.6K ",
+  "main": "build/bubble.min.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "Bubble.js",
+    "events",
+    "handling"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

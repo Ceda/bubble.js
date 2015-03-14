@@ -27,10 +27,14 @@
 			}
 			return r;
 		},
+    closest = function (el) {
+      if (typeof el[ga] !== 'undefined')
+        return el[ga](attr) ? el[ga](attr) : closest(el.parentNode);
+    },
 		handle = function(e, type) {
 			var actions = [], i;
-			if(e && e.target && e.target[ga] && e.target[ga](attr)) {
-				actions = parse(e.target[ga](attr));
+			if(e && e.target ) {
+				actions = parse(closest(e.target));
 			} else if(r[ga](attr)) {
 				actions = parse(r[ga](attr));
 			}
